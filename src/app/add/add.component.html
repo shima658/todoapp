@@ -1,0 +1,17 @@
+        <div class="login-form">
+          <form [formGroup]="addForm" (ngSubmit)="add()">
+              <mat-form-field appearance="fill" class="example-full-width">
+                  <mat-label>Name</mat-label>
+                  <input matInput type="text" formControlName="name" name="name">
+              </mat-form-field>
+              <mat-form-field appearance="fill" class="example-full-width">
+                  <mat-label>Description</mat-label>
+                  <input matInput type="text" formControlName="description" name="description">
+              </mat-form-field>
+              <mat-form-field appearance="fill" class="example-full-width">
+                  <mat-label>Edit</mat-label>
+                  <input matInput type="text" formControlName="description" name="description">
+              </mat-form-field>
+              <button mat-raised-button color="primary" type="submit">Add</button>
+          </form>
+          </div>
