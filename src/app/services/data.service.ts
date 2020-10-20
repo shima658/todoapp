@@ -44,7 +44,7 @@ export class DataService {
     return this.http.get(environment.apiUrl,this.getOptions());
   }
   getTodo(id){
-    return this.http.get(`${environment.apiUrl}/${id}`,this.getOptions());
+    return this.http.get(`${environment.apiUrl}/${id}`,this.getOptions());//template literals or template strings
   }
   editTodo(id, data){
     return this.http.put(`${environment.apiUrl}/${id}`,data, this.getOptions());
